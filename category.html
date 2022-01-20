@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Commerce Template</title>
+
+    <link href="//fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+<style>
+
+    body{ 
+    background-color: #e9eef1;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (min-width: 1200px){
+.container {
+    width: 1170px;
+}
+
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-xs-12 {
+    width: 100%;
+}
+
+.blog-grids {
+    overflow: hidden;
+    margin: 0 -15px;
+}
+
+.blog-grids .grid {
+    background-color: #fff;
+    width: calc(33.33% - 30px);
+    float: left;
+    padding: 15px;
+    margin: 20px 15px 15px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.entry-media img {
+    border-radius: 10px;
+    width: 100%;
+    max-height: 188px;
+}
+
+.entry-body {
+    padding: 27px 10px;
+}
+
+.entry-body .cat {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6220d9;
+    text-transform: uppercase;
+}
+
+.entry-body h3 {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.30em;
+    margin: 3px 0 0.73em;
+}
+
+.entry-body h3 a {
+    color: #41516a;
+}
+
+.entry-body h3 a:hover {
+    color: #6220d9;
+    text-decoration: none;
+}
+
+.entry-body p {
+    margin-bottom: 2em;
+    color: #90949a;
+    line-height: 1.8em;
+}
+
+.read-more-date {
+    position: relative;
+}
+
+.read-more-date a {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-size: 1.06667rem;
+    font-weight: 600;
+    color: #41516a;
+    text-transform: uppercase;
+}
+
+.read-more-date .date {
+    position: absolute;
+    right: 0;
+    color: #90949a;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+
+
+    <div class="container-fluid">
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Kontaktmöglichkeiten</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Ruft uns einfach an unter<br/>
+
++237 699479531<br/>
++237 677264781<br/>
+
+E-mail adresse : delaFourchette@gmail.com
+
+      </div>
+      <div class="modal-footer">
+            </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Online Reservierung  </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       Reservierung in Echtzeit von Montags bis Freitags zwischen 18:30 Uhr und 20:00 Uhr unten +237 22262427.<br/>
+(Reservierung per mail nicht möglich )
+      </div>
+      <div class="modal-footer">
+             </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Anschrift</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        So finden sie uns:<br/>
+Rue du Prince de Galles,<br/> Akwa
+12345 Duala
+      </div>
+      <div class="modal-footer">
+          </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Angeboten</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        -Happy Hour ( Fr-Sa ab 22:00 Uhr )<br/>
+        -Ladies Night (Donnerstag ): erste Getränke kostenlos
+
+      </div>
+    
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Gutscheine</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+    
+
+Wenn Sie sofort einen Tisch reservieren möchten, können Sie dies online tun. Sie können auch Gutscheine online kaufen. Je mehr Möglichkeiten Sie Ihren Kunden geben, um direkte Aktionen auf Ihrer Website durchzuführen, desto wahrscheinlicher ist es, dass er davon Gebrauch macht.
+     <img src="images/galerie/Gutscheine Prä.bWL.jpeg" class="slider-img">
+<br/><br/>
+
+Das Restaurant „La Fourchette“ bietet eine sehr einfache Methode an, auf seiner Website Gutscheine zu kaufen.<br/><br/>
+<img src="images/galerie/gutschein 2-shop-mit-weiterleitung-1.jpeg" class="slider-img">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Neuigkeiten</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          An allen Feiertagen und Ferientagen können Sie neue Geschmacksrichtungen entdecken.
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+  <div class="modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+
+
+
+
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <div class="row min-vh-100">
+            <div class="col-12">
+                <header class="row">
+                    <!-- Top Nav -->
+                    <div class="col-12 bg-dark py-2 d-md-block d-none">
+                        <div class="row">
+                            <div class="col-auto me-auto">
+                                <ul class="top-nav">
+                                    <li>
+                                        <a href="tel:+123-456-7890"><i class="fa fa-phone-square me-2"></i>+123-456-7890</a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:mail@ecom.com"><i class="fa fa-envelope me-2"></i>mail@ecom.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-auto">
+                                <ul class="top-nav">
+                                    <li>
+                                        <a href="register.html"><i class="fas fa-user-edit me-2"></i>Register</a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html"><i class="fas fa-sign-in-alt me-2"></i>Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Top Nav -->
+
+            <!-- Header -->
+                    <div class="col-12 bg-white pt-4">
+                        <div class="row">
+                            <div class="col-lg-auto">
+                                <div class="site-logo text-center text-lg-left">
+                                    <a href="index.html">Restaurant La Fourchette </a><br/>
+                                    <h5>Willkommen in unserem Restaurant, essen Sie wie zu Hause</h5>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-5 mx-auto mt-4 mt-lg-0">
+                                <form action="#">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="search" class="form-control border-dark" placeholder="Search..." required>
+                                            <button class="btn btn-outline-dark"><i class="fas fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                        </div>
+
+                        <!-- Nav -->
+                        <div class="row">
+                            <nav class="navbar navbar-expand-lg navbar-light bg-white col-12">
+                                <button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="mainNav">
+                                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                        </li>
+                                          </li>
+                                         <li class="nav-item active">
+                                            <a class="nav-link" href="docs/SPEISEKARTE.pdf">Speisekarte</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="electronics" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                                            <div class="dropdown-menu" aria-labelledby="electronics">
+                                                <a class="dropdown-item" href="category.html" data-bs-toggle="modal" data-bs-target="#exampleModal3">Angeboten</a>
+                                                <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal4">Gutscheine</a>
+                                                <a class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#exampleModal5">Neuigkeiten</a>
+                                              
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact.html" data-bs-toggle="modal" data-bs-target="#exampleModal">Kontakt</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="contact.html"  data-bs-toggle="modal" data-bs-target="#exampleModal1">Reservierungs</a>
+                                        </li>   
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="contact.html"  data-bs-toggle="modal" data-bs-target="#exampleModal2">Anschrift</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="category.html">Galerie</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a href="teams.html" class="nav-link">Unser Team</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- Nav -->
+
+                    </div>
+                    <!-- Header -->
+
+
+                </header>
+            </div>
+
+            <div class="col-12">
+                <!-- Main Content -->
+                <main class="row">
+
+
+                  
+
+        <div class="col-12">
+            <!-- Main Content -->
+            <main class="row">
+
+                <!-- Category Products -->
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 py-3">
+                            <div class="row">
+                                <div class="col-12 text-center text-uppercase">
+                                    <h2>Galerie</h2>
+                                    <p>Damit Sie so richtig Lust auf das Essen zu haben, stellen wir Ihnen einige Fotos unserer Menüs vor. 
+
+-Binden Sie eine 360° Ansicht Ihres Restaurants ein
+Hier können Sie auch einige Bilder des Restaurants entdecken.
+</p>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <!-- Product -->
+                                <div class="col-xl-2 col-lg-3 col-sm-6 my-3">
+                                    <div class="col-12 bg-white text-center h-100 product-item">
+                                        <div class="row h-100">
+                                            <div class="col-12 p-0 mb-3">
+                                                <a href="product.html">
+                                                    <img src="images/galerie/0bc72a83-ad9b-458d-bc07-f8ad8d33fd03.jpg" class="img-fluid">
+                                                </a>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <a href="product.html" class="product-name">Beignet-Bohnen mit Maisbrei</a>
+                                            </div>
+                                          
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product -->
+
+                                <!-- Product -->
+                                <div class="col-xl-2 col-lg-3 col-sm-6 my-3">
+                                    <div class="col-12 bg-white text-center h-100 product-item">
+                                        <div class="row h-100">
+                                            <div class="col-12 p-0 mb-3">
+                                                <a href="product.html">
+                                                    <img src="images/galerie/Fond d’écran Site.jpg" class="img-fluid">
+                                                </a>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <a href="product.html" class="product-name">Übersicht über andere Essen</a>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product -->
+
+                                <!-- Product -->
+                                <div class="col-xl-2 col-lg-3 col-sm-6 my-3">
+                                    <div class="col-12 bg-white text-center h-100 product-item">
+                                        <div class="row h-100">
+                                            <div class="col-12 p-0 mb-3">
+                                                <a href="product.html">
+                                                    <img src="images/galerie/8c7ced66-1dee-4eae-a647-72675ae57e35.jpg" class="img-fluid">
+                                                </a>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <a href="product.html" class="product-name">Ndole, Rindfleisch mit Plantain (Kochbanane)</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product -->
+
+                                <!-- Product -->
+                                <div class="col-xl-2 col-lg-3 col-sm-6 my-3">
+                                    <div class="col-12 bg-white text-center h-100 product-item">
+                                        <div class="row h-100">
+                                            <div class="col-12 p-0 mb-3">
+                                                <a href="product.html">
+                                                    <img src="images/galerie/59efa792-c008-4c95-9dd8-64c9fb3eb65e.jpg" class="img-fluid">
+                                                </a>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <a href="product.html" class="product-name">Taro , gelbe Soße mit Räucherfisch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product -->
+
+                                <!-- Product -->
+                                <div class="col-xl-2 col-lg-3 col-sm-6 my-3">
+                                    <div class="col-12 bg-white text-center h-100 product-item">
+                                        <div class="row h-100">
+                                            <div class="col-12 p-0 mb-3">
+                                                <a href="product.html">
+                                                    <img src="images/galerie/76DAA207-9787-4307-A478-D6185BD8A3E4_1_105_c.jpeg" class="img-fluid">
+                                                </a>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <a href="product.html" class="product-name">Pistaziengerichte mit weißer yams</a>
+                                            </div>
+                                             
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product -->
+
+                                <!-- Product -->
+                                <div class="col-xl-2 col-lg-3 col-sm-6 my-3">
+                                    <div class="col-12 bg-white text-center h-100 product-item">
+                                        <div class="row h-100">
+                                            <div class="col-12 p-0 mb-3">
+                                                <a href="product.html">
+                                                    <img src="images/galerie/25229d87-ddbe-4d5b-8b15-a95abb679791.jpg" class="img-fluid">
+                                                </a>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <a href="product.html" class="product-name">Salat mit Hähnchen</a>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product -->
+
+                                <!-- Product -->
+                                <div class="col-xl-2 col-lg-3 col-sm-6 my-3">
+                                    <div class="col-12 bg-white text-center h-100 product-item">
+                                        <div class="row h-100">
+                                            <div class="col-12 p-0 mb-3">
+                                                <a href="product.html">
+                                                    <img src="images/galerie/957669c6-e756-4844-92fb-e21b20796395.jpg" class="img-fluid">
+                                                </a>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <a href="product.html" class="product-name">Eru (Okok leaves&Spinat und Palmöl) mit Tapioka</a>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product -->
+
+                                <!-- Product -->
+                                <div class="col-xl-2 col-lg-3 col-sm-6 my-3">
+                                    <div class="col-12 bg-white text-center h-100 product-item">
+                                        <div class="row h-100">
+                                            <div class="col-12 p-0 mb-3">
+                                                <a href="product.html">
+                                                    <img src="images/galerie/B5C2B207-94B0-4FF6-9AE1-246A99F3AB7B_1_105_c.jpeg" class="img-fluid">
+                                                </a>
+                                            </div>
+                                             <div class="col-12 mb-3">
+                                                <a href="product.html" class="product-name">Senegalesischer Reis</a>
+                                            </div>
+                                           
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product -->
+
+                                <!-- Product -->
+                                <div class="col-xl-2 col-lg-3 col-sm-6 my-3">
+                                    <div class="col-12 bg-white text-center h-100 product-item">
+                                        <div class="row h-100">
+                                            <div class="col-12 p-0 mb-3">
+                                                <a href="product.html">
+                                                    <img src="images/galerie/BE3AE8B6-7D0B-4ADD-99A9-A5F5D8A2D601_1_105_c.jpeg" class="img-fluid">
+                                                </a>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <a href="product.html" class="product-name">Geröstete Spaghetti mit Gemüse und eier </a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product -->
+
+                                <!-- Product -->
+                                <div class="col-xl-2 col-lg-3 col-sm-6 my-3">
+                                    <div class="col-12 bg-white text-center h-100 product-item">
+                                        <div class="row h-100">
+                                            <div class="col-12 p-0 mb-3">
+                                                <a href="product.html">
+                                                    <img src="images/galerie/D98F77C9-118D-49F9-9712-7D59746FBBA9_1_105_c.jpeg" class="img-fluid">
+                                                </a>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <a href="product.html" class="product-name">DG ( gebratene Kochbananen und Hähnchen )</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product -->
+
+                                <!-- Product -->
+                                <div class="col-xl-2 col-lg-3 col-sm-6 my-3">
+                                    <div class="col-12 bg-white text-center h-100 product-item">
+                                        <div class="row h-100">
+                                            <div class="col-12 p-0 mb-3">
+                                                <a href="product.html">
+                                                    <img src="images/galerie/e71a4432-abe7-421f-b0ca-1fac17246d7f.jpg" class="img-fluid">
+                                                </a>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <a href="" class="product-name">Gegrillerten Fisch mit Miondo</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product -->
+
+                                <!-- Product -->
+                                <div class="col-xl-2 col-lg-3 col-sm-6 my-3">
+                                    <div class="col-12 bg-white text-center h-100 product-item">
+                                        <div class="row h-100">
+                                            <div class="col-12 p-0 mb-3">
+                                                <a href="">
+                                                    <img src="images/galerie/IMG_5170.JPG" class="img-fluid">
+                                                </a>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <a href="product.html" class="product-name">salziger und würziger Cornille-Kuchen</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product -->
+
+                                <!-- Product -->
+                                <div class="col-xl-2 col-lg-3 col-sm-6 my-3">
+                                    <div class="col-12 bg-white text-center h-100 product-item">
+                                        <div class="row h-100">
+                                            <div class="col-12 p-0 mb-3">
+                                                <a href="">
+                                                    <img src="images/galerie/IMG_5172.PNG" class="img-fluid">
+                                                </a>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <a href="product.html" class="product-name">Couscous mit Okrasoße</a>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product -->
+
+                                 <!-- Product -->
+                                <div class="col-xl-2 col-lg-3 col-sm-6 my-3">
+                                    <div class="col-12 bg-white text-center h-100 product-item">
+                                        <div class="row h-100">
+                                            <div class="col-12 p-0 mb-3">
+                                                <a href="">
+                                                    <img src="images/galerie/IMG_5181.jpg" class="img-fluid">
+                                                </a>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <a href="product.html" class="product-name">Innenansicht des Restaurants</a>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+
+
+            </main>
+            <!-- Main Content -->
+        </div>
+
+        <div class="col-12 align-self-end">
+              <!-- Footer -->
+                <footer class="row">
+                    <div class="col-12 bg-dark text-white pb-3 pt-5">
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-4 text-center text-sm-left mb-sm-0 mb-3">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="footer-logo">
+                                            <a href="index.html">Restaurant La Fourchette</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <address>
+                                 
+                                            Rue du Prince de Galles 44,<br> 
+                                            12345 Deggendorf
+                                            
+                                        </address>
+                                    </div>
+                                    <div class="col-12">
+                                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-8 text-center text-sm-left mb-sm-0 mb-3">
+                                <div class="row">
+                                    <div class="col-12 text-uppercase">
+                                        <h4>Uber uns?</h4>
+                                    </div>
+                                    <div class="col-12 text-justify">
+                                        <p>Für ein Abendessen zu zweit oder für Geschäftsessen empfängt Sie das Restaurant La Fourchette im Herzen von Akwa in einem raffinierten und schön dekorierten Rahmen. Wir sind ein Lokal, das sowohl die Angestellten der benachbarten Verwaltungen als auch die Touristen glücklich macht. La fourchette ist ein Restaurant mit Bar, das wegen seiner grünen Umgebung gerne besucht wird. Sie können hier die großen Klassiker genießen, die von unserem Chefkoch und seinem Team zubereitet werden, das Sie herzlich willkommen heißt.
+
+Ausgezeichnet mit 4 Sternen im Guide Michelin seit 5 Jahren. 18.5 im Guide Gault Millau……
+</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-3 col-5 ms-lg-auto ms-sm-0 ms-auto mb-sm-0 mb-3">
+                                <div class="row">
+                                    <div class="col-12 text-uppercase">
+                                        <h4>Schnell Links</h4>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul class="footer-nav">
+                                            <li>
+                                                <a href="#">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Kontakt Uns</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Uber uns</a>
+                                            </li>
+                                            
+                                            <li>
+                                                <a href="#">Terms & Conditions</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-sm-2 col-4 me-auto mb-sm-0 mb-3">
+                                <div class="row">
+                                    <div class="col-12 text-uppercase text-underline">
+                                        <h4>Help</h4>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul class="footer-nav">
+                                            <li>
+                                                <a href="#">FAQs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shipping</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Returns</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Track Order</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Report Fraud</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 text-center text-sm-left">
+                                <div class="row">
+                                    <div class="col-12 text-uppercase">
+                                        <h4>Newsletter</h4>
+                                    </div>
+                                    <div class="col-12">
+                                        <form action="#">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" placeholder="Enter your email..." required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <button class="btn btn-outline-light text-uppercase">Subscribe</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Messages -->
+    <div class="toast-container position-fixed bottom-0 start-0 p-3">
+        <div class="toast align-items-center text-white bg-success border-0">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="fas fa-check-circle me-2"></i>
+                    This is a success alert message.
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="toast align-items-center text-white bg-danger border-0">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="fas fa-times-circle me-2"></i>
+                    This is an error alert message.
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="toast align-items-center text-white bg-warning border-0">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="fas fa-exclamation-circle me-2"></i>
+                    This is a warning alert message.
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="toast align-items-center text-white bg-info border-0">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="fas fa-info-circle me-2"></i>
+                    This is a error alert message.
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+    <!-- Messages -->
+
+  
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</body>
+</html>
